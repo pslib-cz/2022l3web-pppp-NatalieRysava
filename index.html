@@ -1,0 +1,204 @@
+</html>
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="navbar_items navbar_items--grey">
+                <div class="navbar_items--left">
+                    <a class="navbar-item--small navbar-item--icon_phone" href="#">+420 777 666 666</a>
+                    <div><img src="./dividing-line.svg" alt="dividing line"></div>         
+                    <a class="navbar-item--small navbar-item--icon_email" href="#">obchod@l3web.cz</a>
+                </div>
+                <a class="navbar-item--small navbar-item--icon_profile" href="#">Přihlášení</a>
+            </div>
+            <div class="navbar_items">
+                <a href="./index.html" class="navbar__logo"><img src="./Logo5.svg" alt="logo Ipsum" width="170" height="41"></a>           
+                <div class="navbar_items--right">
+                    <a href="#" class="btn btn-cta">Zkušební verze</a>
+                    <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)"><!--menu--></a></div>
+                </div>
+            </div>
+             <menu class="navbar__menu hamburger-menu-list navbar__menu--hidden">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Úvod</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_2">Funkce</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_3">Podpora</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_4">Ceník</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section_5">Kontakt</a>
+                </li>
+            </menu>
+        </nav>
+        <script>
+            const hamburgerButtons = document.querySelectorAll(".hamburger-menu");
+            document.querySelector("body").onclick = (e) => {
+            const menus = document.querySelectorAll(".hamburger-menu-list");
+            for (const menu of menus) {
+                menu.classList.add("navbar__menu--hidden");
+            }
+            for (const button of hamburgerButtons) {
+                button.classList.remove("hamburger-menu--active");
+            }
+            }
+            for (const btn of hamburgerButtons) {
+            btn.onclick = (event) => {
+                event.stopPropagation();
+                const menus = document.querySelectorAll(".hamburger-menu-list");
+                for (const menu of menus) {
+                menu.classList.toggle("navbar__menu--hidden");
+                }
+                btn.classList.toggle("hamburger-menu--active");
+            }
+            }
+        </script>
+    </header>
+    <main>
+        <section>
+            <h1 class="header-h1 header-bold"><span class="text--orange">Řízení školy</span> ještě nebylo jednodušší</h1>
+            <p class="main-text">Představujeme Software pro řízení lidských zdrojů ve škole nebylo efektivnější.</p>
+            <ul>
+                <li>Počítá mzdové náklady</li>
+                <li>Generuje lidi</li>
+                <li>Tvoří budoucnost</li>
+            </ul>
+            <a href=""><img src="" alt=""></a>
+            <footer><!--značky--></footer>
+        </section>
+        <section>¨
+            <h2>Výhody řešení</h2>
+            <div>
+                <a href=""><img src="" alt=""></a>
+                <p><span class="text--orange">Zkracuje čas práce</span> díky velkému množství funkcí</p>
+            </div>
+            <div>
+                <a href=""><img src="" alt=""></a>
+                <p>Poskytuje selektivní přístup všem pracovníkům</p>
+            </div>
+            <div>
+                <a href=""><img src="" alt=""></a>
+                <p>Umožňuje outsourcing personalistických procesů</p>
+            </div>
+            <div>
+                <a href=""><img src="" alt=""></a>
+                <p>Zaručuje splnění požadavků ISO a IATF</p>
+            </div>
+            <div>
+                <div>
+
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+            <a href="#" class="btn btn-cta">Prozkoumat všechny funkce</a>
+        </section>
+        <section>
+            <h2>Příběh</h2>
+            <h3>Jsme dva - Honza a Tomá</h3>
+            <p>Praesent ultricies lacus in ligula volutpat feugiat. In hac habitasse platea dictumst. In hac habitasse platea dictumst.</p> 
+            <p>Fusce luctus justo eget nisi hendrerit, quis aliquam arcu porta. Cras ultricies, elit sit amet cursus consectetur, risus felis ullamcorper nulla, ut scelerisque sapien lorem non sem. Integer vestibulum ornare ligula, a placerat lectus volutpat ultrices. Aliquam commodo malesuada purus a mollis. Vestibulum pulvinar aliquam libero eu consequat. Cras massa orci, ultrices sed scelerisque id, semper vel neque. Proin a turpis quis nibh cursus hendrerit sit amet vel libero. Nullam sit amet laoreet ante. Mauris sit amet mi vitae arcu dignissim porttitor et in arcu. Nullam eleifend molestie arcu, pretium fermentum orci feugiat eget. Integer dapibus tincidunt ipsum, at rutrum magna rutrum at. Quisque pretium convallis vestibulum.</p>
+            <a href="#" class="btn btn-cta">Přečíst celý příběh</a>
+            <a href=""><img src="" alt=""></a>
+        </section>
+        <section>
+            <h2>Napsali o nás</h2>
+            <div>
+                <a href=""><img src="" alt=""></a>
+                <div>
+                    <p>Lorem ipsum in the good ol’ days. We are just getting started. We are on the ground floor. Success feeds pride. Pride kills urgency. So nothing fails like success. We always bring our best. Nothing is more fun than serving God with people you love. We are spiritual contributors not spiritual consumers. We give up things we love for things we love move. We are all about the capital C Church. We impress people with our strengths but we connect with people through our weaknesses. We are faith-filled, big-thinking, bet-the-farm risk takers. We will never insult God with safe thinking and safe living. People need to be reminded much more than they need to be instructed. We believe the local church is the hope of the world. Trust the process. What you fear the most reveals where you trust God the least. We can do infinitely more together than we can apart. We want to be known for what we are for, not for what we are against.  If we live with integrity, nothing else matters. You don’t have to have the faith to finish, just the faith to start. The Church should be a place where people can belong before they believe. If we don’t live with integrity, nothing else matters. What you hear matters and what you don’t hear matters. We will do anything short of sin to reach people who don’t know Christ. We will laugh hard, loud, and often.  Less is more. Stress is bad. Giving is good. Tomorrow matters. To reach people no one is reaching, we’ll have to do what no one is doing. Just because God is silent doesn’t mean God is absent. Excellence honors God and inspires people. The church does not exist for us. We are the Church, and we exist for the world. Because of what He did, this is what we do. We are a micro-church with a mega-vision.  An average plan implemented today is better than an great plan started a month from now. The difference between where you are and where God wants you to be is the pain you’re unwilling to endure.</p>
+                    <p>Michaela Komorousová</p>
+                    <p>Personalista, Magna Exteriors s.r.o.</p>
+                </div>
+            </div>
+            <div>
+                <a href=""><img src="" alt=""></a>
+                <div>
+                    <p>Lorem ipsum in the good ol’ days. We are just getting started. We are on the ground floor. Success feeds pride. Pride kills urgency. So nothing fails like success. We always bring our best. Nothing is more fun than serving God with people you love. We are spiritual contributors not spiritual consumers. We give up things we love for things we love move. We are all about the capital C Church. We impress people with our strengths but we connect with people through our weaknesses. We are faith-filled, big-thinking, bet-the-farm risk takers. We will never insult God with safe thinking and safe living. People need to be reminded much more than they need to be instructed. We believe the local church is the hope of the world. Trust the process. What you fear the most reveals where you trust God the least. We can do infinitely more together than we can apart. We want to be known for what we are for, not for what we are against.  If we live with integrity, nothing else matters. You don’t have to have the faith to finish, just the faith to start. The Church should be a place where people can belong before they believe. If we don’t live with integrity, nothing else matters. What you hear matters and what you don’t hear matters. We will do anything short of sin to reach people who don’t know Christ. We will laugh hard, loud, and often.  Less is more. Stress is bad. Giving is good. Tomorrow matters. To reach people no one is reaching, we’ll have to do what no one is doing. Just because God is silent doesn’t mean God is absent. Excellence honors God and inspires people. The church does not exist for us. We are the Church, and we exist for the world. Because of what He did, this is what we do. We are a micro-church with a mega-vision.  An average plan implemented today is better than an great plan started a month from now. The difference between where you are and where God wants you to be is the pain you’re unwilling to endure.</p>
+                    <p>Alžběta Formánková</p>
+                    <p>Personalista, Magna Exteriors s.r.o.</p>
+                </div>
+            </div>
+            <div>
+                <a href=""><img src="" alt=""></a>
+                <div>
+                    <p>Lorem ipsum in the good ol’ days. We are just getting started. We are on the ground floor. Success feeds pride. Pride kills urgency. So nothing fails like success. We always bring our best. Nothing is more fun than serving God with people you love. We are spiritual contributors not spiritual consumers. We give up things we love for things we love move. We are all about the capital C Church. We impress people with our strengths but we connect with people through our weaknesses. We are faith-filled, big-thinking, bet-the-farm risk takers. We will never insult God with safe thinking and safe living. People need to be reminded much more than they need to be instructed. We believe the local church is the hope of the world. Trust the process. What you fear the most reveals where you trust God the least. We can do infinitely more together than we can apart. We want to be known for what we are for, not for what we are against.  If we live with integrity, nothing else matters. You don’t have to have the faith to finish, just the faith to start. The Church should be a place where people can belong before they believe. If we don’t live with integrity, nothing else matters. What you hear matters and what you don’t hear matters. We will do anything short of sin to reach people who don’t know Christ. We will laugh hard, loud, and often.  Less is more. Stress is bad. Giving is good. Tomorrow matters. To reach people no one is reaching, we’ll have to do what no one is doing. Just because God is silent doesn’t mean God is absent. Excellence honors God and inspires people. The church does not exist for us. We are the Church, and we exist for the world. Because of what He did, this is what we do. We are a micro-church with a mega-vision.  An average plan implemented today is better than an great plan started a month from now. The difference between where you are and where God wants you to be is the pain you’re unwilling to endure.</p>
+                    <p>Anna Suchánková</p>
+                    <p>Personalista, Magna Exteriors s.r.o.</p>
+                </div>
+            </div>
+            <a href="#" class="btn btn-cta">Chci si přečíst víc</a>
+        </section>
+        <section>
+            <h2>Aktuality</h2>
+            <div>
+                <p>Přidán nový modul do administrace</p>
+                <p>Lorem ipsum dolor sia nostra, per inceptos hymenaeos. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis.</p>
+                <p><span class="text--orange">Přečíst celý článek</span></p>
+            </div>
+            <div>
+                <p>Sleva na  3 pozice 20%</p>
+                <p>V roce 2022 jsme si pro vás připravili slevu 20% pro nové 3 pozice v naší aplikaci...</p>
+                <p><span class="text--orange">Přečíst celý článek</span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+
+        </section>
+        <section>
+            
+        </section>
+        <section>
+            
+        </section>
+        <section>
+            
+        </section>
+        <section>
+            <div>
+
+            </div>
+            <div>
+                <p>Vyrobilo: B interactive</p>
+            </div>
+        </section>
+    </footer>
+</body>
+
+</html>
