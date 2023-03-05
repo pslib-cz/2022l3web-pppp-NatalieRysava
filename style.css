@@ -12,10 +12,6 @@
     text-align: center;
 }
 
-p {
-    word-wrap: break-word;
-  }
-
 .navbar_items--right {
     display: flex;
     flex-direction: row;
@@ -59,10 +55,11 @@ p {
 
 
 .navbar-item--small {
-    display: block;
+    display: flex;
     font-size: 10.5px;
     color: black;
     font-weight: 700;
+    align-items: center;
 }
 
 .navbar_items--grey {
@@ -119,6 +116,7 @@ img {
     text-transform: uppercase;
     font-size: 0.75em;
     text-decoration: none;
+    font-size: 0px;
 }
 .hamburger-menu::after {
     content: url(./hamburger.svg);
