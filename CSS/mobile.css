@@ -1,6 +1,9 @@
 .navbar_items {
     padding: 0.75em 1em;
     display: flex;
+    position: relative; 
+    z-index: 1;
+    background-color: #F5F5F5;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -27,7 +30,7 @@
 }
 
 .navbar-item--icon_phone::before {
-    content: url(./icon_phone.svg);
+    content: url(../icon_phone.svg);
     position: relative;
     font-size: 12px;
     padding: 6px;
@@ -36,7 +39,7 @@
 }
 
 .navbar-item--icon_email::before {
-    content: url(./icon_email.svg);
+    content: url(../icon_email.svg);
     position: relative;
     font-size: 12px;
     padding: 6px;
@@ -45,7 +48,7 @@
 }
 
 .navbar-item--icon_profile::before {
-    content: url(./icon_profile.svg);
+    content: url(../icon_profile.svg);
     position: relative;
     font-size: 18px;
     padding: 6px;
@@ -67,17 +70,6 @@
     padding: 0.5em 1.5em;
 }
 
-a {
-    text-decoration: none;
-}
-
-img {
-    width: 100%;
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-
 .btn {
     background-color: #f5841f;
     padding: 9px 18px;
@@ -90,14 +82,18 @@ img {
 /* hamburger menu */
 
 @media (max-width: 768px) {
-    .navbar__menu--hidden {
-        display: none;
+    .navbar__menu.navbar__menu--hidden {
+        transform: translateY(-100%);
     }
 }
 @media (min-width: 768px) {
     .navbar__hamburger {
         display: none;
     }
+}
+
+.navbar__menu {
+    transition: transform .5s;
 }
 
 .navbar {
@@ -107,6 +103,7 @@ img {
     flex-direction: column;
     justify-content: space-between;
 }
+
 /* hamburger menu */
 .hamburger-menu {
     display: flex;
@@ -119,7 +116,7 @@ img {
     font-size: 0px;
 }
 .hamburger-menu::after {
-    content: url(./hamburger.svg);
+    content: url(../hamburger.svg);
     width: 24px;
     height: 20px;
 }
@@ -128,6 +125,7 @@ img {
     position: absolute;
     background-color: #f5841f;
     left: 0;
+    top: 0;
     right: 0;
     padding: 0.5em;
     font-size: 0.8em;
@@ -135,54 +133,10 @@ img {
 }
 
 .hamburger-menu--active::after {
-    content: url(./cross.svg);
+    content: url(../cross.svg);
     width: 24px;
     height: 20px;
   }
-  
-
-/* následuje pro menu nedůležitý kód */
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap');
-html {
-    font-family: 'Open Sans', sans-serif;
-    --bg-color: #FFFFFF;
-    --main-color: #EB6C27;
-    --white-color:white;
-    font-size: 16px; /* => 16px == 1 em = 1rem */
-}
-
-.text--orange{
-    color: var(--main-color);
-}
-
-body{
-    background-color: var(--bg-color);
-    margin: 0 auto;
-}
-
-.nav-item {
-    list-style: none;
-    padding: 1em;
-    border-bottom: 1px solid white;
-}
-
-.nav-item:last-of-type {
-    border-bottom: none;
-}
-
-.nav-item:hover {
-    background-color: rgb(138, 180, 217);
-}
-
-.nav-item > a {
-    color: white;
-    font-weight: 800;
-}
-
-.nav-item:hover > a{
-    color: rgb(0, 10, 54);
-}
 
 /* HEADER*/
 .header-light{
@@ -206,6 +160,29 @@ body{
 }
 
 /* NAVBAR */
+.nav-item {
+    list-style: none;
+    padding: 1em;
+    border-bottom: 1px solid white;
+}
+
+.nav-item:last-of-type {
+    border-bottom: none;
+}
+
+.nav-item:hover {
+    background-color: rgb(138, 180, 217);
+}
+
+.nav-item > a {
+    color: white;
+    font-weight: 800;
+}
+
+.nav-item:hover > a{
+    color: rgb(0, 10, 54);
+}
+
 .navbar__logo{
     display: inline-block;
     color: var(--white-color);
