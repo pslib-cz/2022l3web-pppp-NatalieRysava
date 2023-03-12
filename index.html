@@ -10,21 +10,23 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="normalize.css">
 </head>
-
 <body>
     <header class="main-header">
         <nav class="navbar">
             <div class="navbar_items navbar_items--grey">
-                <div class="navbar_items--left">
+                <div class="navbar_items__top-items">
                     <a class="navbar-item--small navbar-item--icon_phone" href="#">+420 777 666 666</a>
                     <div><img src="./dividing-line.svg" alt="dividing line"></div>         
                     <a class="navbar-item--small navbar-item--icon_email" href="#">obchod@l3web.cz</a>
                 </div>
-                <a class="navbar-item--small navbar-item--icon_profile" href="#">Přihlášení</a>
+                <div class="navbar_items__top-items navbar_items__top-items--right">
+                    <div><img src="./dividing-line.svg" alt="dividing line"></div>
+                    <a class="navbar-item--small navbar-item--icon_profile" href="#">Přihlášení</a>
+                </div>
             </div>
             <div class="navbar_items">
                 <a href="./index.html" class="navbar__logo"><img src="./Logo5.svg" alt="logo Ipsum" width="170" height="41"></a>           
-                <div class="navbar_items--right">
+                <div class="navbar_items__bottom-items">
                     <a href="#" class="btn btn-cta">Zkušební verze</a>
                     <div class="navbar__hamburger"><a class="hamburger-menu" href="javascript:void(0)">menu</a></div>
                 </div>
@@ -72,33 +74,40 @@
     </header>
     <main>
         <section>
-            <h1 class="header-h1 header-bold"><span class="text--orange">Řízení školy</span> ještě nebylo jednodušší</h1>
+            <h1 class="section__heading heading-h1"><span class="text--orange">Řízení školy</span> ještě nebylo jednodušší</h1>
             <p class="main-text">Představujeme Software pro řízení lidských zdrojů ve škole nebylo efektivnější.</p>
-            <ul>
-                <li>Počítá mzdové náklady</li>
-                <li>Generuje lidi</li>
-                <li>Tvoří budoucnost</li>
+            <ul class="items-list">
+                <li class="items-list_item">Počítá mzdové náklady</li>
+                <li class="items-list_item">Generuje lidi</li>
+                <li class="items-list_item">Tvoří budoucnost</li>
             </ul>
-            <a href=""><img src="" alt=""></a>
+            <div class="btn-box">
+                <a href="#" class="btn-box__btn btn">Prozkoumat všechny funkce</a>
+            </div>
+            <figure class="picture-box">
+                <a href="./img_school.jpeg"><img class="picture-box__picture picture picture--rounded" src="./img_school.jpeg" alt="School"></a>
+            </figure>
             <footer><!--značky--></footer>
         </section>
-        <section>¨
-            <h2>Výhody řešení</h2>
-            <div>
-                <a href=""><img src="" alt=""></a>
-                <p><span class="text--orange">Zkracuje čas práce</span> díky velkému množství funkcí</p>
-            </div>
-            <div>
-                <a href=""><img src="" alt=""></a>
-                <p>Poskytuje selektivní přístup všem pracovníkům</p>
-            </div>
-            <div>
-                <a href=""><img src="" alt=""></a>
-                <p>Umožňuje outsourcing personalistických procesů</p>
-            </div>
-            <div>
-                <a href=""><img src="" alt=""></a>
-                <p>Zaručuje splnění požadavků ISO a IATF</p>
+        <section class="section--blue">
+            <h2 class="section__heading heading-h2">Výhody řešení</h2>
+            <div class="icon-container">
+                <div>
+                    <a href="#"><img class="icon-box" src="./icon_timer-sand.svg" alt="Ikona přesypacích hodin"></a>
+                    <p class="icon-text"><span class="text--orange">Zkracuje čas práce</span> díky velkému množství funkcí</p>
+                </div>
+                <div>
+                    <a href="#"><img class="icon-box" src="./icon_people.svg" alt="Ikona lidí"></a>
+                    <p class="icon-text">Poskytuje selektivní přístup všem pracovníkům</p>
+                </div>
+                <div>
+                    <a href="#"><img class="icon-box" src="./icon_compare-arrows.svg" alt="Ikona porovnávacích šipek"></a>
+                    <p class="icon-text">Umožňuje outsourcing personalistických procesů</p>
+                </div>
+                <div>
+                    <a href="#"><img class="icon-box" src="./icon_completed-list.svg" alt="Ikona vyplněného formuláře"></a>
+                    <p class="icon-text">Zaručuje splnění požadavků ISO a IATF</p>
+                </div>
             </div>
             <div>
                 <div>

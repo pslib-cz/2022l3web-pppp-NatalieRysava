@@ -1,24 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap');
 html {
     font-family: 'Open Sans', sans-serif;
-    --bg-color: #FFFFFF;
-    --main-color: #EB6C27;
-    --white-color:white;
+    --prim-white: #FFFFFF;
+    --prim-black: #000000;
+    --prim-orange: #F5841F;
+    --prim-darkblue: #16213C;
+    --sec-lightblue: #8ECAE6;
+    --sec-lightblue25: #8ECAE625;
+    --sec-lightgray: #F5F5F5;
     font-size: 16px; /* => 16px == 1 em = 1rem */
 }
 
 .text--orange{
-    color: var(--main-color);
+    color: var(--prim-orange);
 }
 
-img {
+.picture {
     width: 100%;
     object-fit: cover;
     display: block;
-    height: 100%;
+    /*height: 100%;*/
 }
 
-.picture a {
+.picture-box {
+    margin: 2em;
+}
+
+.picture-box a {
     display: block;
 }
 
@@ -27,6 +35,11 @@ a {
 }
 
 body{
-    background-color: var(--bg-color);
+    background-color: var(--prim-white);
     margin: 0 auto;
+}
+
+.section--blue {
+    background-color: var(--sec-lightblue25);
+    
 }
