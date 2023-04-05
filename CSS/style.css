@@ -11,6 +11,27 @@ html {
     font-size: 16px; /* => 16px == 1 em = 1rem */
 }
 
+.heading, .text {
+    text-align: center;
+}
+
+.main-text {
+    font-size: 1.2em;
+}
+
+.items-list__text {
+    font-size: 1em;
+}
+
+.main-heading {
+    font-size: 2.5em;
+    max-width: 400px;
+}
+
+.text--narrow {
+    margin: 0.5em 2em;
+}
+
 .text--orange{
     color: var(--prim-orange);
 }
@@ -32,12 +53,9 @@ html {
     border-radius: 1em;
 }
 
-.picture-box a {
-    display: block;
-}
-
 a {
     text-decoration: none;
+    display: block;
 }
 
 body{
@@ -56,6 +74,7 @@ body{
     box-sizing: border-box;
     overflow-x: scroll;
     gap: 2em;
+    margin: 2em 0;
 }
 
 .function-box {
@@ -73,4 +92,12 @@ body{
 
 .function-box:last-child {
     margin-right: 2em;
+}
+
+.section {
+    padding-bottom: 2em;
+}
+
+.section__subheading {
+    margin-top: 0;
 }

@@ -9,12 +9,7 @@
     font-size: 2.25em;
 }
 
-.heading-h1 {
-    font-size: 2.5em;
-    max-width: 400px;
-}
-
-p, h1, h2, h3 {
+p, h3 {
     text-align: center;
     margin: 2em;
 }
@@ -26,7 +21,7 @@ p, h1, h2, h3 {
     list-style: none;
 }
 
-.items-list_item::before {
+.items-list__text::before {
     content: url(../icon_tick-mark.svg);
     position: relative;
     font-size: 1em;
@@ -35,7 +30,7 @@ p, h1, h2, h3 {
     vertical-align: middle;
 }
 
-.navbar_items {
+.navbar__items {
     padding: 0.75em 1em;
     display: flex;
     position: relative; 
@@ -46,20 +41,14 @@ p, h1, h2, h3 {
     justify-content: space-between;
 }
 
-.main-text {
-    margin: 0.5em 2em;
-    font-size: 14.25px;
-    text-align: center;
-}
-
-.navbar_items__bottom-items {
+.bottom-items {
     display: flex;
     flex-direction: row;
     gap: 1em;
     align-items: center;
 }
 
-.navbar_items__top-items {
+.top-items {
     display: flex;
     width: 100%;
     justify-content: space-around;
@@ -67,36 +56,54 @@ p, h1, h2, h3 {
     align-items: center;
 }
 
-.navbar_items__top-items--right {
+.top-items--right {
     justify-content: space-around;
     width: 60%;
 }
 
-.navbar-item--icon_phone::before {
+.navbar-item--icon-phone::before {
     content: url(../icon_phone.svg);
     position: relative;
     font-size: 2em;
     padding: 6px;
     text-align: center;
     vertical-align: middle;
+    transform: scale(1);
+    transition: 1s;
 }
 
-.navbar-item--icon_email::before {
+.navbar-item--icon-phone:hover::before {
+    transform: scale(1.25);
+}
+
+.navbar-item--icon-email::before {
     content: url(../icon_email.svg);
     position: relative;
     font-size: 12px;
     padding: 6px;
     text-align: center;
     vertical-align: middle;
+    transform: scale(1);
+    transition: 1s;
 }
 
-.navbar-item--icon_profile::before {
+.navbar-item--icon-email:hover::before {
+    transform: scale(1.25);
+}
+
+.navbar-item--icon-profile::before {
     content: url(../icon_profile.svg);
     position: relative;
     font-size: 18px;
     padding: 6px;
     text-align: center;
     vertical-align: middle;
+    transform: scale(1);
+    transition: 1s;
+}
+
+.navbar-item--icon-profile:hover::before {
+    transform: scale(1.25);
 }
 
 
@@ -108,7 +115,7 @@ p, h1, h2, h3 {
     align-items: center;
 }
 
-.navbar_items--grey {
+.navbar__items--grey {
     background-color: var(--sec-lightgray);
     padding: 0.5em 1.5em;
 }
@@ -121,6 +128,12 @@ p, h1, h2, h3 {
     font-size: 0.75em;
     font-weight: 700;
     display: inline-block;
+    border: 4px solid var(--prim-orange);
+}
+
+.btn:hover {
+    background-color: var(--prim-white);
+    color: var(--prim-darkblue);
 }
 
 .btn-box {
@@ -129,62 +142,7 @@ p, h1, h2, h3 {
 
 /* hamburger menu */
 
-@media (max-width: 768px) {
-    .navbar__menu.navbar__menu--hidden {
-        transform: translateY(-100%);
-    }
-}
-@media (min-width: 768px) {
-    .navbar__hamburger {
-        display: none;
-    }
-}
 
-.navbar__menu {
-    transition: transform .5s;
-}
-
-.navbar {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-/* hamburger menu */
-.hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: inherit;
-    text-transform: uppercase;
-    font-size: 0.75em;
-    text-decoration: none;
-    font-size: 0px;
-}
-.hamburger-menu::after {
-    content: url(../hamburger.svg);
-    width: 24px;
-    height: 20px;
-}
-
-.hamburger-menu-list {
-    position: absolute;
-    background-color: var(--prim-orange);
-    left: 0;
-    top: 1em;
-    right: 0;
-    padding: 0.5em;
-    font-size: 0.8em;
-    margin-top: calc(38.8px + 65px);
-}
-
-.hamburger-menu--active::after {
-    content: url(../cross.svg);
-    width: 24px;
-    height: 20px;
-  }
 
 /* HEADER*/
 
@@ -215,8 +173,20 @@ p, h1, h2, h3 {
 }
 
 .navbar__logo{
+    background-image: url(../Logo5.svg);
+    width: 170px;
+    height: 41px;
     display: inline-block;
-    color: var(--prim-white);
+    transition: 1s;
+    z-index: 1;
+}
+
+.navbar__logo:hover {
+    background-image: url(../Logo5-2.svg);
+    width: 170px;
+    height: 41px;
+    z-index: 2;
+    transition: 1s;
 }
 
 .icon-container {
@@ -229,6 +199,13 @@ p, h1, h2, h3 {
     background-color: var(--prim-darkblue);
     padding: 2em;
     border-radius: 50%;
+    transform: scale(1);
+    transition: ease .5s;
+}
+
+a:hover .icon-box {
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 .icon-text {
