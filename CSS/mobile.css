@@ -64,58 +64,17 @@ p, h3 {
 .navbar-item--icon-phone::before {
     content: url(../icon_phone.svg);
     font-size: 2em;
-<<<<<<< HEAD
 }
 
-=======
-    padding: 6px;
-    text-align: center;
-    vertical-align: middle;
-    transform: scale(1);
-    transition: 1s;
-}
-
-.navbar-item--icon-phone:hover::before {
-    transform: scale(1.25);
-}
-
->>>>>>> 725be2f1e7c646d329ce3b1227fa9581339f02c2
 .navbar-item--icon-email::before {
     content: url(../icon_email.svg);
     font-size: 12px;
-<<<<<<< HEAD
 }
-
-=======
-    padding: 6px;
-    text-align: center;
-    vertical-align: middle;
-    transform: scale(1);
-    transition: 1s;
-}
-
-.navbar-item--icon-email:hover::before {
-    transform: scale(1.25);
-}
->>>>>>> 725be2f1e7c646d329ce3b1227fa9581339f02c2
 
 .navbar-item--icon-profile::before {
     content: url(../icon_profile.svg);
     font-size: 18px;
-<<<<<<< HEAD
-=======
-    padding: 6px;
-    text-align: center;
-    vertical-align: middle;
-    transform: scale(1);
-    transition: 1s;
 }
-
-.navbar-item--icon-profile:hover::before {
-    transform: scale(1.25);
->>>>>>> 725be2f1e7c646d329ce3b1227fa9581339f02c2
-}
-
 
 .navbar-item--small {
     display: flex;
@@ -123,21 +82,18 @@ p, h3 {
     color: black;
     font-weight: 700;
     align-items: center;
+    padding: 6px 24px;
     text-align: center;
     vertical-align: middle;
-    padding: 6px 24px;
     position: relative;
     transform: scale(1);
     transition: 1s;
 }
 
-<<<<<<< HEAD
 .navbar-item--small:hover {
     transform: scale(1.25);
 }
 
-=======
->>>>>>> 725be2f1e7c646d329ce3b1227fa9581339f02c2
 .navbar__items--grey {
     background-color: var(--sec-lightgray);
     padding: 0.5em 1.5em;
