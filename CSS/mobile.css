@@ -71,11 +71,12 @@
     vertical-align: middle;
     position: relative;
     transform: scale(1);
-    transition: 1s;
+    transition: ease .5s;
 }
 
 .navbar-item--small:hover {
     transform: scale(1.25);
+    transition: 1s;
 }
 
 .navbar__items--grey {
