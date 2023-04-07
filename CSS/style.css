@@ -8,6 +8,7 @@ html {
     --sec-lightblue: #8ECAE6;
     --sec-lightblue25: #8ECAE625;
     --sec-lightgray: #F5F5F5;
+    --sec-mediumgray: #E7E7E7;
     font-size: 16px; /* => 16px == 1 em = 1rem */
 }
 
@@ -15,8 +16,43 @@ html {
     text-align: center;
 }
 
+.section__heading {
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    color: var(--prim-darkblue);
+    font-weight: 800;
+    margin: 0 auto;
+    padding: 1em;
+    font-size: 2.25em;
+}
+
+.icon-text {
+    font-weight: 700;
+}
+
+.function-text {
+    margin: 2em;
+}
+
 .main-text {
     font-size: 1.2em;
+}
+
+.section__text {
+    margin: 0.75em 2em;
+}
+
+.section--line-above::before {
+    content: "";
+    display: block;
+    border: solid var(--sec-mediumgray) 1px;
+}
+
+.section--line-under::after {
+    content: "";
+    display: block;
+    margin-top: 6em;
+    border: solid var(--sec-mediumgray) 1px;
 }
 
 .items-list__text {
@@ -26,14 +62,58 @@ html {
 .main-heading {
     font-size: 2.5em;
     max-width: 400px;
-}
-
-.text--narrow {
-    margin: 0.5em 2em;
+    padding-bottom: .5em;
 }
 
 .text--orange{
     color: var(--prim-orange);
+}
+
+.logo-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    margin: 2em;
+}
+
+.logo-box > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-box--up {
+    width: 320px;
+}
+
+.logo-box--down {
+    width: 400px;
+}
+
+.logo-box a {
+    transform: scale(0.8);
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 2em;
+}
+
+.rating-box {
+    display: flex;
+    gap: 1em;
+}
+
+.rating-box img {
+    border-radius: 50%;
+    width: 112px;
+}
+
+.rating-text {
+    text-align: left;
 }
 
 .picture {
@@ -42,11 +122,11 @@ html {
 }
 
 .picture-box {
-    margin: 2em;
+    margin: 2em 2em 0;
 }
 
 .picture-box--full-width {
-    margin: 2em 0;
+    margin: 2em 0 0;
 }
 
 .picture--rounded {
@@ -100,4 +180,10 @@ body{
 
 .section__subheading {
     margin-top: 0;
+}
+
+.icon-text-bubble {
+    position: absolute;
+    width: 64px;
+    height: auto;
 }
