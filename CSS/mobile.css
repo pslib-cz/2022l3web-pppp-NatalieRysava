@@ -1,14 +1,12 @@
 .items-list {
-    text-align: center;
     padding-right: 29px;
     padding-left: 0;
-    list-style: none;
+    list-style: url(../Avatars/avatar1.jpg);
 }
 
 .items-list__text::before {
     content: url(../icon_tick-mark.svg);
     position: relative;
-    font-size: 1em;
     padding: 6px;
     text-align: center;
     vertical-align: middle;

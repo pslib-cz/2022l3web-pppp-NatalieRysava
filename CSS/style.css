@@ -18,6 +18,7 @@ html {
 
 .heading, .text {
     text-align: center;
+    list-style: none;
 }
 
 .text--orange{
@@ -214,6 +215,7 @@ html {
 a {
     text-decoration: none;
     display: block;
+    color: var(--prim-black);
 }
 
 body{
@@ -221,7 +223,7 @@ body{
     margin: 0 auto;
 }
 
-.section--blue {
+.section--lightblue {
     background-color: var(--sec-lightblue25);
     
 }
@@ -274,4 +276,90 @@ body{
     position: absolute;
     width: 64px;
     height: auto;
+}
+
+/* Footer */
+
+.footer__main {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 4em 0;
+    align-items: center;
+}
+
+.footer__footer {
+    padding-bottom: 1em;
+}
+
+.footer__footer::before {
+    content: "";
+    display: block;
+    border: solid var(--sec-lightblue) 1px;
+    width: 80%;
+    margin: 0 auto 1em;
+}
+
+.footer__footer > .footer-text {
+    padding: 1em;
+    margin: 0;
+    font-size: 0.9em;
+    display: flex;
+    gap: .5em;
+    justify-content: center;
+}
+
+.footer-box__items {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer-box__items > .footer-text {
+    margin: 0;
+}
+
+.footer--darkblue {
+    background-color: var(--prim-darkblue);
+}
+
+.footer-text, .footer-text a {
+    color: var(--sec-lightblue);
+    margin: .75em;
+}
+
+.footer-text a:hover {
+    color: var(--prim-white);
+}
+
+ul.footer-text {
+    padding-left: 0;
+}
+
+.footer__logo {
+    background-image: url(../Logo5footer.svg);
+    width: 170px;
+    height: 41px;
+    display: inline-block;
+    transform: scale(1);
+    transition: ease 1s;
+}
+
+.footer__logo:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.footer-box__heading {
+    font-size: 1.375em;
+    color: var(--sec-lightblue);
+    font-weight: 800;
+}
+
+.maker-text {
+    margin: 0;
+}
+
+.footer-text .maker-text:hover {
+    color: var(--prim-orange);
 }
