@@ -229,6 +229,7 @@ body{
 
 .section--lightblue {
     background-color: var(--sec-lightblue25);
+    position: relative;
     
 }
 
@@ -239,6 +240,16 @@ body{
     overflow-x: scroll;
     gap: 2em;
     margin: 2em 0;
+}
+
+.section--lightblue::after /* dočasná šipka naznačující posun z důvodu, že neumíme ješzě nakódovat karusel*/{
+    content: url(../icon_arrow-big.svg);
+    width: 24px;
+    position: absolute;
+    z-index: 2;
+    bottom: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .function-container > article {
@@ -307,7 +318,7 @@ body{
 .icon-text-bubble {
     position: absolute;
     bottom: 15px;
-    width: calc(91px * 0.75);
+    width: calc(92px * 0.75);
     height: auto;
     left: 56px;
     stroke-width: 1px;
