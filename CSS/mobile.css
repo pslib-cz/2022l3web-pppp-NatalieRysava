@@ -82,7 +82,7 @@
     padding: 0.5em 1.5em;
 }
 
-.btn {
+.btn, .btn_reverse-colors:hover {
     background-color: var(--prim-orange);
     padding: 9px 18px;
     border-radius: 22.5px;
@@ -90,18 +90,27 @@
     font-size: 0.9em;
     font-weight: 700;
     display: inline-block;
-    
     border: 4px solid var(--prim-orange);
 }
 
-.btn:hover {
+.btn:hover, .btn_reverse-colors {
     background-color: var(--prim-white);
+    padding: 9px 18px;
+    border-radius: 22.5px;
     color: var(--prim-darkblue);
+    font-size: 0.9em;
+    font-weight: 700;
+    display: inline-block;
+    border: 4px solid var(--prim-orange);
 }
 
 .btn-box {
     text-align: center;
     margin-top: 2em;
+}
+
+.btn-box:has(.btn_reverse-colors) {
+    margin-top: 0;
 }
 
 /* hamburger menu */
@@ -115,7 +124,6 @@
 /* NAVBAR */
 .nav-item {
     list-style: none;
-    padding: 1em;
     border-bottom: 1px solid var(--prim-white);
 }
 
@@ -130,6 +138,7 @@
 .nav-item > a {
     color: var(--prim-white);
     font-weight: 800;
+    padding: 1em;
 }
 
 .nav-item:hover > a{

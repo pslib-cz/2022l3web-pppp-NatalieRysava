@@ -229,8 +229,6 @@ body{
 
 .section--lightblue {
     background-color: var(--sec-lightblue25);
-    position: relative;
-    
 }
 
 .function-container {
@@ -242,15 +240,20 @@ body{
     margin: 2em 0;
 }
 
-.section--lightblue::after /* dočasná šipka naznačující posun z důvodu, že neumíme ješzě nakódovat karusel*/{
-    content: url(../icon_arrow-big.svg);
-    width: 24px;
-    position: absolute;
-    z-index: 2;
-    bottom: 100px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+@media (pointer: coarse) /* CSS kód, který se má použít pouze pro dotyková zařízení */{    
+    .section--arrow {
+        position: relative;
+    }
+    .section--arrow::after /* dočasná šipka naznačující posun z důvodu, že neumíme ješzě nakódovat karusel*/{
+        content: url(../icon_arrow-big.svg);
+        width: 24px;
+        position: absolute;
+        z-index: 2;
+        bottom: 90px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }    
+  }
 
 .function-container > article {
     flex-shrink: 0;
@@ -268,7 +271,7 @@ body{
 }
 
 .arrow {
-    display: flex; /* Mám zde flex, protože mě nenapado, jak jinak vystředit vertikálně šipku */
+    display: flex; /* mám zde flex, protože mě nenapado, jak jinak vystředit vertikálně šipku */
     justify-content: center;
     align-items: center;
     background-color: var(--prim-orange);
@@ -301,9 +304,15 @@ body{
     margin-right: 2em;
 }
 
-.function-text {
+.function-box > *:not(div) {
     margin: 2em;
-    color: var(--prim-black);
+    text-align: left;
+}
+
+.function-heading {
+    font-size: 1.125em;
+    font-weight: 800;
+    color: var(--prim-darkblue);
 }
 
 .section {
@@ -409,5 +418,112 @@ ul.footer-text {
 }
 
 .footer-text .maker-text:hover {
+    color: var(--prim-orange);
+}
+
+/* funkce */
+
+.section-funkce {
+    margin: 2em;
+}
+
+.function-list-container {
+    display: flex;
+    gap: 2em;
+    align-items: center;
+}
+
+.function-list-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.function-list-btn > img {
+    width: 67.5px;
+    height: auto;
+    transform: scale(1);
+    transition: ease .5s;
+}
+
+.function-list-btn > img:hover {
+    width: 67.5px;
+    height: auto;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.function-list-text {
+    font-size: 1.1875em;
+}
+
+.section-funkce__heading {
+    font-size: 1.6em;
+    margin-top: 2em;
+    font-weight: 800;
+}
+
+.section__path-box {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+
+.section__path-text {
+    font-size: 0.875em;
+    margin: 0;
+}
+
+.section__path-text:hover {
+    color: var(--prim-orange);
+}
+
+.section__path-box > a > img{
+    width: 24px;
+    height: 24px;
+    padding-bottom: 0.25em;
+}
+
+.section__path-box > img {
+    width: 4px;
+    height: 4px;
+}
+
+.heading-funkce {
+    font-size: 2.25em;
+    margin-bottom: 0;
+    text-align: left;
+    padding: 0;
+}
+
+.heading--hideden {
+    font-size: 0;
+}
+
+.section--mediumgray {
+    background-color: var(--sec-mediumgray);
+    padding-top: 2em;
+}
+
+.section--lightgray {
+    background-color: var(--sec-lightgray);
+}
+
+.heading--left {
+    text-align: left;
+    padding-left: 0;
+}
+
+.feedback-text {
+    font-size: 1.2em;
+}
+
+a.feedback-text{
+    margin: 2em;
+    font-size: 1.3em;
+    color: var(--prim-darkblue);
+}
+
+a.feedback-text:hover {
     color: var(--prim-orange);
 }
