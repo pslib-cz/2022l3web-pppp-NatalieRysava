@@ -63,7 +63,7 @@
 
 @media (max-width: 768px) {
     .navbar__menu.navbar__menu--hidden {
-        transform: translateY(-100%);
+        transform: translateY(-110%);
     }
 
     .hamburger-menu--active span {
