@@ -97,8 +97,12 @@ html {
 .section--line-under::after {
     content: "";
     display: block;
-    margin-top: 6em;
+    margin-top: 5em;
     border: solid var(--sec-mediumgray) 1px;
+}
+
+.section--line-under {
+    position: relative;
 }
 
 .items-list__text {
@@ -247,7 +251,35 @@ body{
     display: inline-block;
     border-radius: .5em;
     box-shadow: 0px 0px 25px rgb(0 0 0 / 10%);
-    flex-shrink: 0;
+    margin-bottom: 2em;
+    position: relative;
+    z-index: 1;
+}
+
+.arrow {
+    display: flex; /* Mám zde flex, protože mě nenapado, jak jinak vystředit vertikálně šipku */
+    justify-content: center;
+    align-items: center;
+    background-color: var(--prim-orange);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    bottom: -20px;
+    left: 32px;
+    opacity: 0;
+    transition: opacity ease 0.25s /*.25s*/;
+}
+
+.function-box:hover .arrow {
+    opacity: 1;
+    transition: opacity .5s;
+  }
+
+.arrow img {
+    width: 16px;
+    height: 12px;
 }
 
 .function-container > article:first-child {
@@ -274,8 +306,12 @@ body{
 
 .icon-text-bubble {
     position: absolute;
-    width: 64px;
+    bottom: 15px;
+    width: calc(91px * 0.75);
     height: auto;
+    left: 56px;
+    stroke-width: 1px;
+    fill: var(--prim-white);
 }
 
 /* Footer */
@@ -326,6 +362,7 @@ body{
 .footer-text, .footer-text a {
     color: var(--sec-lightblue);
     margin: .75em;
+    align-self: center;
 }
 
 .footer-text a:hover {
