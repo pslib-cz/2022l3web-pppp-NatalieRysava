@@ -211,4 +211,8 @@
         z-index: 2;
         transition: 1s;
     }
+
+    .hamburger-menu-list {
+        top: 1rem;
+    } 
 }
