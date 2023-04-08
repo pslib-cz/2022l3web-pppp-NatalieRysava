@@ -252,6 +252,9 @@ body{
         bottom: 90px;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    .hamburger-menu-list {
+        top: 1rem;
     }    
   }
 
