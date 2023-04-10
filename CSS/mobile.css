@@ -147,12 +147,16 @@
 
 .navbar__logo{
     background-image: url(../Logo5.svg);
+    background-repeat: no-repeat;
+    background-origin: content-box;
     width: 170px;
     height: 40px;
 }
 
 .navbar__logo:hover {
     background-image: url(../Logo5-2.svg);
+    background-repeat: no-repeat;
+    background-origin: content-box;
     width: 170px;
     height: 40px;
 }
@@ -194,9 +198,11 @@
     background-color: inherit;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 460px) {
     .navbar__logo{
         background-image: url(../Logo5simple.svg);
+        background-repeat: no-repeat;
+        background-origin: content-box;
         width: 40px;
         height: 40px;
         display: inline-block;
@@ -206,6 +212,8 @@
     
     .navbar__logo:hover {
         background-image: url(../Logo5simple-2.svg);
+        background-repeat: no-repeat;
+        background-origin: content-box;
         width: 40px;
         height: 40px;
         z-index: 2;

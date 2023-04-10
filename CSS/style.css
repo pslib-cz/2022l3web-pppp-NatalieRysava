@@ -56,6 +56,10 @@ html {
     display: inline-block;
 }
 
+.actuality-box > div {
+    width: calc(100% - (52px + 1rem));
+}
+
 .actuality-text--click {
     padding: 1rem 0;
 }
@@ -69,9 +73,9 @@ html {
     box-sizing: border-box;
     color: var(--sec-lightblue);
     background-repeat: no-repeat;
-    padding: .75rem 2rem 2rem;
-    background-position-x: center;
-    background-size: 52px;
+    width: 52px;
+    padding-top: .5rem;
+    text-align: center;
 }
 
 .actuality-box__heading {
@@ -329,12 +333,12 @@ body{
     font-weight: 800;
 }
 
-.icon-text-bubble {
+.icon_text-bubble {
     position: absolute;
     bottom: 14px;
     width: calc(92px * 0.75);
     height: auto;
-    left: 56px;
+    left: 12vw;
     stroke-width: 1px;
     fill: var(--prim-white);
 }
@@ -400,6 +404,8 @@ ul.footer-text {
 
 .footer__logo {
     background-image: url(../Logo5footer.svg);
+    background-repeat: no-repeat;
+    background-origin: content-box;
     width: 170px;
     height: 41px;
     display: inline-block;
@@ -428,7 +434,7 @@ ul.footer-text {
 
 /* funkce */
 
-.section-funkce {
+.section_individual-pages {
     margin: 2rem;
 }
 
@@ -442,6 +448,7 @@ ul.footer-text {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
 }
 
 .function-list-btn > img {
@@ -462,16 +469,20 @@ ul.footer-text {
     font-size: 1.15rem;
 }
 
-.section-funkce__heading {
+a.function-list-text:hover {
+    color: var(--prim-orange);
+}
+
+.section_individual-pages__subheading {
     font-size: 1.6rem;
-    margin-top: 2rem;
-    font-weight: 800;
+    margin-top: 4rem;
 }
 
 .section__path-box {
     display: flex;
     gap: .5rem;
     align-items: center;
+    margin-top: 1rem;
 }
 
 .section__path-text {
@@ -483,18 +494,18 @@ ul.footer-text {
     color: var(--prim-orange);
 }
 
-.section__path-box > a > img{
-    width: 24px;
-    height: 24px;
-    padding-bottom: 0.25rem;
+.section__path-box .icon_home {
+    width: 16px;
+    height: 17.5px;
+    padding-bottom: 4px;
 }
 
-.section__path-box > img {
+.section__path-box .dividing-point {
     width: 4px;
     height: 4px;
 }
 
-.heading-funkce {
+.section_individual-pages__heading {
     font-size: 2.25rem;
     margin-bottom: 0;
     text-align: left;
@@ -503,6 +514,8 @@ ul.footer-text {
 
 .heading--hideden {
     font-size: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .section--mediumgray {
@@ -514,7 +527,7 @@ ul.footer-text {
     background-color: var(--sec-lightgray);
 }
 
-.heading--left {
+.subheading--left {
     text-align: left;
     padding-left: 0;
 }
@@ -531,4 +544,11 @@ a.feedback-text{
 
 a.feedback-text:hover {
     color: var(--prim-orange);
+}
+
+/* kontakt */
+
+.map {
+    height: 245px;
+    width: 100%;
 }

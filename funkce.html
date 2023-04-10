@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/hamburger.css">
     <link rel="stylesheet" href="normalize.css">
-    <script src="JS/hamburger.js"></script>
 </head>
 <body>
     <header class="main-header">
@@ -18,11 +17,11 @@
             <div class="navbar__items navbar__items--grey">
                 <div class="top-items">
                     <a class="navbar-item--small navbar-item--icon-phone" href="#">+420 777 666 666</a>
-                    <div><img src="./dividing-line.svg" alt="Šedá dělící čárka"></div>         
+                    <div><img src="./dividing-line--lightgrey.svg" alt="Šedá dělící čárka"></div>         
                     <a class="navbar-item--small navbar-item--icon-email" href="#">obchod@l3web.cz</a>
                 </div>
                 <div class="top-items top-items--right">
-                    <div><img src="./dividing-line.svg" alt="Šedá dělící čárka"></div>
+                    <div><img src="./dividing-line--lightgrey.svg" alt="Šedá dělící čárka"></div>
                     <a class="navbar-item--small navbar-item--icon-profile" href="#">Přihlášení</a>
                 </div>
             </div>
@@ -57,22 +56,22 @@
         </nav>
     </header>
     <main>
-        <section class="section section-funkce">
-            <h1 class="section__heading heading heading-funkce">Funkce</h1>
+        <section class="section section_individual-pages">
+            <h1 class="section__heading heading section_individual-pages__heading">Funkce</h1>
             <div class="section__path-box">
-                <a href="index.html"><img src="./home.svg" alt="Ikona domečku"></a>
+                <a href="index.html"><img class="icon_home" src="./icon_home.svg" alt="Ikona domečku"></a>
                 <a href="index.html" class="section__path-text">Úvod</a>
-                <img src="./icon-dot.svg" alt="Dělící puntík">
+                <img class="dividing-point" src="./dividing-point.svg" alt="Dělicí puntík">
                 <a href="funkce.html" class="section__path-text">Funkce</a>
             </div>
-            <h2 class="section__heading heading heading--left section-funkce__heading">Seznam funkcí aplikace</h2>
+            <h2 class="section__subheading subheading subheading--left section_individual-pages__subheading">Seznam funkcí aplikace</h2>
             <div class="function-list-container">
                 <p class="function-list-text"><span class="text--bold">Ut enim ad minima veniam,</span> quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
                 <div class="function-list-box">
                     <a href="#" class="function-list-btn">
                         <img src="./play-button.svg" alt="Přehrávací tlačítko">
                     </a>
-                    <p class="function-list-text">Videotutoriály</p>                    
+                    <a href="#" class="function-list-text">Videotutoriály</a>                    
                 </div>
             </div>
         </section>
@@ -169,7 +168,7 @@
             </div>
         </section>
         <section class="section">
-            <h2 class="section__heading heading section-funkce__heading">Máte dotaz <span class="text--orange">k chování aplikace?</span></h2>
+            <h2 class="section__heading heading section_individual-pages__subheading">Máte dotaz <span class="text--orange">k chování aplikace?</span></h2>
             <p class="section__text text feedback-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur</p>
             <a class="section__text text feedback-text text--extrabold" href="mailto:podpora@l3web.cz">podpora@l3web.cz</a>
             <div class="btn-box">
@@ -233,15 +232,16 @@
         <footer class="footer__footer">
             <div class="footer-text text">
                 <p>© Copyright 2023 -&nbsp;Pslib.cz s.r.o.</p>
-                <img src="./dividing-line-lightblue.svg" alt="Světle modrá dělící čárka">
+                <img src="./dividing-line--lightblue.svg" alt="Světle modrá dělící čárka">
                 <a href="">Cookies</a>
-                <img src="./dividing-line-lightblue.svg" alt="Světle modrá dělící čárka">
+                <img src="./dividing-line--lightblue.svg" alt="Světle modrá dělící čárka">
                 <a href="">Podmínky užití</a>
             </div>
             <div class="footer-text text">
                 <a href="#" class="maker-text text">Vyrobilo: B interactive</a>
             </div>
         </footer>
-    </footer>
+    </footer>    
+    <script src="JS/hamburger.js"></script>
 </body>
 </html>
