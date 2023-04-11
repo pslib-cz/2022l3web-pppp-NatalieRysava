@@ -137,26 +137,26 @@
 
 
 /* NAVBAR */
-.nav-item {
+.navbar__menu-item {
     list-style: none;
     border-bottom: 1px solid var(--prim-white);
 }
 
-.nav-item:last-of-type {
+.navbar__menu-item:last-of-type {
     border-bottom: none;
 }
 
-.nav-item:hover {
+.navbar__menu-item:hover {
     background-color: rgb(138, 180, 217);
 }
 
-.nav-item > a {
+.navbar__menu-item > a {
     color: var(--prim-white);
     font-weight: 800;
     padding: 1rem;
 }
 
-.nav-item:hover > a{
+.navbar__menu-item:hover > a{
     color: var(--prim-darkblue);
 }
 

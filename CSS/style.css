@@ -435,7 +435,7 @@ ul.footer-text {
 
 /* funkce */
 
-.section_individual-pages {
+.section--individual-pages {
     margin: 2rem;
 }
 
@@ -474,7 +474,7 @@ a.function-list-text:hover {
     color: var(--prim-orange);
 }
 
-.section_individual-pages__subheading {
+.section--individual-pages__subheading {
     font-size: 1.6rem;
     margin-top: 4rem;
 }
@@ -482,31 +482,35 @@ a.function-list-text:hover {
 .section__path-box {
     display: flex;
     gap: .5rem;
-    align-items: center;
+    align-items: baseline;
     margin-top: 1rem;
 }
 
-.section__path-text {
+.section__path-link {
     font-size: 0.875rem;
     margin: 0;
 }
 
-.section__path-text:hover {
+.section__path-link:hover {
     color: var(--prim-orange);
 }
 
-.section__path-box .icon_home {
-    width: 16px;
-    height: 17.5px;
-    padding-bottom: 4px;
+.section__path-link--icon_home::before {
+    content: url(../icon_home.svg);
+    padding-bottom: .4rem;
 }
 
-.section__path-box .dividing-point {
-    width: 4px;
-    height: 4px;
+.section__path-link--divider-dot::before {
+    content: url(../divider-dot.svg);
 }
 
-.section_individual-pages__heading {
+[class*="section__path-link--"]::before {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.section--individual-pages__heading {
     font-size: 2.25rem;
     margin-bottom: 0;
     text-align: left;
