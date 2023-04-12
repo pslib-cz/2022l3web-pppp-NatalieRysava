@@ -339,7 +339,7 @@ body{
     padding-bottom: 2rem;
 }
 
-.section__subheading {
+.section__heading {
     margin-top: 0;
     font-weight: 800;
 }
@@ -445,7 +445,7 @@ ul.footer-box__text {
 
 /* funkce */
 
-.section--individual-pages {
+.section_individual-pages--margin {
     margin: 2rem;
 }
 
@@ -479,7 +479,7 @@ ul.footer-box__text {
 
 .function-list-text {
     font-size: 1.15rem;
-    margin: 1rem 0;
+    margin: 0;
     text-align: left;
 }
 
@@ -487,11 +487,19 @@ a.function-list-text:hover {
     color: var(--prim-orange);
 }
 
-.section--individual-pages__subheading {
+.section_individual-pages__subheading {
     font-size: 1.6rem;
     margin-top: 4rem;
+    margin-bottom: 2rem;
     color: var(--prim-darkblue);
     text-align: center;
+}
+
+.section_individual-pages__heading {
+    font-size: 2.25rem;
+    margin-bottom: 0;
+    text-align: left;
+    padding: 0;
 }
 
 .section__path-box {
@@ -525,12 +533,7 @@ a.function-list-text:hover {
     margin-right: 0.5rem;
 }
 
-.section--individual-pages__heading {
-    font-size: 2.25rem;
-    margin-bottom: 0;
-    text-align: left;
-    padding: 0;
-}
+
 
 [class*="--hidden"] {
     font-size: 0;
@@ -547,7 +550,7 @@ a.function-list-text:hover {
     background-color: var(--sec-lightgray);
 }
 
-.subheading--left {
+.heading--left {
     text-align: left;
     padding-left: 0;
 }
