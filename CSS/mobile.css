@@ -51,14 +51,12 @@
     background-repeat: no-repeat;
     background-origin: content-box;
     background-position: center;
+    transform: scale(1);
+    transition: ease .5s;
 }
 
 .navbar__item--icon_phone::before {
     background-image: url(../icon_phone.svg);
-}
-
-.navbar__item--icon_phone:hover::before {
-    background-image: url(../icon_phone--hover.svg);
 }
 
 .navbar__item--icon_email::before {    
@@ -66,18 +64,18 @@
     
 }
 
-.navbar__item--icon_email:hover::before {    
-    background-image: url(../icon_email--hover.svg);
-    
-}
-
 .navbar__item--icon_profile::before {
     background-image: url(../icon_profile.svg);
 }
 
-.navbar__item--icon_profile:hover::before {
-    background-image: url(../icon_profile--hover.svg);
+[class*="navbar__item--icon_"]:hover::before {
+    transform: scale(1.25);
+    transition: 1s;
 }
+
+
+
+
 
 
 .navbar__item--top {
@@ -97,7 +95,7 @@
 
 
 
-.btn, .btn_reverse-colors:hover {
+.btn {
     background-color: var(--prim-orange);
     padding: 9px 18px;
     border-radius: 22.5px;
@@ -108,15 +106,19 @@
     border: 4px solid var(--prim-orange);
 }
 
-.btn:hover, .btn_reverse-colors {
+.btn:hover {
     background-color: var(--prim-white);
-    padding: 9px 18px;
-    border-radius: 22.5px;
     color: var(--prim-darkblue);
-    font-size: 0.9rem;
-    font-weight: 700;
-    display: inline-block;
-    border: 4px solid var(--prim-orange);
+}
+
+.btn--reverse-colors {
+    background-color: var(--prim-white);
+    color: var(--prim-darkblue);
+}
+
+.btn--reverse-colors:hover {
+    background-color: var(--prim-orange);
+    color: var(--prim-white);
 }
 
 .btn-box {
@@ -124,7 +126,7 @@
     margin-top: 2rem;
 }
 
-.btn-box:has(.btn_reverse-colors) {
+.btn-box:has(.btn--reverse-colors) {
     margin-top: 0;
 }
 
