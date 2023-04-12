@@ -22,8 +22,8 @@ html {
     list-style: none;
 }
 
-.text--orange{
-    color: var(--prim-orange);
+[class*="--orange"] {
+    color: var(--prim-orange) !important;
 }
 
 .section__heading {
@@ -128,7 +128,7 @@ html {
     font-weight: 800;
 }
 
-.text--bold {
+[class*="--bold"] {
     font-weight: 700;
 }
 
@@ -280,7 +280,7 @@ body{
     height: 200px;
 }
 
-.arrow {
+.function-box__arrow {
     display: flex; /* mám zde flex, protože mě nenapado, jak jinak vystředit vertikálně šipku */
     justify-content: center;
     align-items: center;
@@ -296,12 +296,16 @@ body{
     transition: opacity ease 0.25s /*.25s*/;
 }
 
-.function-box:hover .arrow {
+.function-box:hover .function-box__heading {
+    color: var(--prim-darkblue) !important;
+  }
+
+.function-box:hover .function-box__arrow {
     opacity: 1;
     transition: opacity .5s;
   }
 
-.arrow img {
+.function-box__arrow img {
     width: 16px;
     height: 12px;
 }
@@ -319,7 +323,7 @@ body{
     text-align: left;
 }
 
-.function-heading {
+.function-box__heading {
     font-size: 1.125rem;
     font-weight: 800;
     color: var(--prim-darkblue);
@@ -451,23 +455,26 @@ ul.footer-text {
     align-items: center;
 }
 
-.function-list-btn > img {
+.function-list-box__btn > img {
     width: 67.5px;
     height: auto;
     transform: scale(1);
     transition: ease .5s;
 }
 
-.function-list-btn > img:hover {
-    width: 67.5px;
-    height: auto;
+.function-list-box__btn:hover > img{
     transform: scale(1.1);
     transition: 1s;
+}
+
+.function-list-box__text {
+    margin-top: 1rem;
 }
 
 .function-list-text {
     font-size: 1.15rem;
     margin: 1rem 0;
+    text-align: left;
 }
 
 a.function-list-text:hover {
@@ -477,6 +484,8 @@ a.function-list-text:hover {
 .section--individual-pages__subheading {
     font-size: 1.6rem;
     margin-top: 4rem;
+    color: var(--prim-darkblue);
+    text-align: center;
 }
 
 .section__path-box {
@@ -517,7 +526,7 @@ a.function-list-text:hover {
     padding: 0;
 }
 
-.heading--hideden {
+[class*="--hidden"] {
     font-size: 0;
     margin: 0;
     padding: 0;
