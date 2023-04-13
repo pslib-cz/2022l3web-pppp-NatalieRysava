@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+    .navbar__item--top {
+        font-size: 0.875rem;
+        gap: .5rem;
+    }
+
+    [class*="navbar__item--icon_"]::before {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    [class*="navbar__item--icon_"]:hover::before {
+        transform: scale(1);
+    }
+}

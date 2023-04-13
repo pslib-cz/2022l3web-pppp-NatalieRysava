@@ -10,9 +10,14 @@
     transition: transform .5s;
 }
 
-
 .navbar__hamburger {
     cursor: pointer;    
+}
+
+@media (min-width: 768px) {
+    .navbar__hamburger {
+        display: none;
+    }
 }
 
 .hamburger-menu {
@@ -54,7 +59,7 @@
     position: absolute;
     background-color: var(--prim-orange);
     left: 0;
-    top: calc(1rem + 1px);
+    top: calc(1rem + 5px);
     right: 0;
     padding: 0.5rem;
     font-size: 0.8rem;
@@ -62,7 +67,7 @@
 }
 
 @media (max-width: 768px) {
-    .navbar__menu.navbar__menu--hidden {
+    .navbar__menu--hidden {
         transform: translateY(-110%);
     }
 
