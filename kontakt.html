@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
-    <link rel="stylesheet" href="CSS/mobile.css">
+    <link rel="stylesheet" href="normalize.css">    
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/hamburger.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="CSS/layers.css">
 </head>
 <body>
     <header class="main-header">
@@ -49,40 +49,45 @@
             </div>
         </nav>
     </header>
-    <main class="main">
-        <section class="section section_individual-page section--margin">
-            <h1 class="section__heading heading heading--left section_individual-page__heading">Kontakt</h1>
+    <main class="main">¨
+        <header class="individual-page-section__header">
+            <h1 class="section__heading heading heading--left individual-page-section__heading">Kontakt</h1>
             <div class="section__path-box">
                 <a href="index.html" class="section__path-link section__path-link--icon_home">Úvod</a>
                 <a href="kontakt.html" class="section__path-link section__path-link--divider-dot">Kontakt</a>
             </div>
-            <h2 class="section__heading heading heading--left section_individual-page__subheading">Neváhejte nás kontaktovat</h2>
-            <div class="contact-list-container">
-                <div class="contact-list-box">
-                    <p class="contact-list-box__text text--bold">Pslib.cz s.r.o</p>
-                    <p class="contact-list-box__text">Masarykova 12345</p>
-                    <p class="contact-list-box__text">460 00 Liberec</p>
-                </div>
-                <div class="contact-list-box">
-                    <a class="contact-list-box__link contact-list-box__link--icon_phone" href="tel:++420777666666">+420 777 666 666</a>
-                    <a class="contact-list-box__link contact-list-box__link--icon_email" href="mailto:obchod@l3web.cz">obchod@l3web.cz</a>
-                    <div class="contact-list-box__link-group">
-                        <a class="contact-list-box__link contact-list-box__link--hidden contact-list-box__link--icon_youtube" href="#">Youtube</a>
-                        <a class="contact-list-box__link contact-list-box__link--hidden contact-list-box__link--icon_linkedin" href="#">LinkedIn</a>
+        </header>
+        <section class="section individual-page-section section--line-under">            
+            <div class="individual-page-container">
+                <div class="individual-page-box">
+                    <h2 class="section__heading heading heading--left individual-page-section__subheading">Neváhejte nás kontaktovat</h2>
+                    <div class="contact-list-container">
+                        <div class="contact-list-box">
+                            <p class="contact-list-box__text text text--bold">Pslib.cz s.r.o</p>
+                            <p class="contact-list-box__text text">Masarykova 12345</p>
+                            <p class="contact-list-box__text text">460 00 Liberec</p>
+                        </div>
+                        <div class="contact-list-box">
+                            <a class="contact-list-box__link contact-list-box__link--icon_phone" href="tel:++420777666666">+420 777 666 666</a>
+                            <a class="contact-list-box__link contact-list-box__link--icon_email" href="mailto:obchod@l3web.cz">obchod@l3web.cz</a>
+                            <div class="contact-list-box__link-group">
+                                <a class="contact-list-box__link contact-list-box__link--hidden contact-list-box__link--icon_youtube" href="#">Youtube</a>
+                                <a class="contact-list-box__link contact-list-box__link--hidden contact-list-box__link--icon_linkedin" href="#">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btn-box btn-box--left">
+                        <a href="https://www.google.com/maps/place/SP%C5%A0SE+a+VO%C5%A0+Liberec+1,+Masarykova+3/@50.7731107,15.0646721,17z/data=!3m1!4b1!4m6!3m5!1s0x470936a0b62f8e85:0x30961e345e401253!8m2!3d50.7731107!4d15.0646721!16s%2Fg%2F11btn1c37q" class="btn btn-cta">Přejít na adresu</a>
                     </div>
                 </div>
-            </div>
-            <div class="btn-box btn-box--left">
-                <a href="https://www.google.com/maps/place/SP%C5%A0SE+a+VO%C5%A0+Liberec+1,+Masarykova+3/@50.7731107,15.0646721,17z/data=!3m1!4b1!4m6!3m5!1s0x470936a0b62f8e85:0x30961e345e401253!8m2!3d50.7731107!4d15.0646721!16s%2Fg%2F11btn1c37q" class="btn btn-cta">Přejít na adresu</a>
-            </div>
+                <div class="individual-page-box map-box">
+                    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2523.1304727226498!2d15.0624967!3d50.7731549!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470936a0b62f8e83%3A0x27e91649b311f9a0!2zU3TFmWVkbsOtIHByxa9teXNsb3bDoSDFoWtvbGEgc3Ryb2puw60gYSBlbGVrdHJvdGVjaG5pY2vDoSBhIFZ5xaHFocOtIG9kYm9ybsOhIMWha29sYQ!5e0!3m2!1scs!2scz!4v1681083216794!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div> 
+            </div>  
+            <img class="icon_lightgrey-text-bubble" src="./icons/icon_lightgrey-text-bubble.svg" alt="Textová bublina">
         </section>
-        <section class="section section_individual-page section--line-under">
-            <h2 class="section__heading heading heading--hidden section_individual-page__subheading">Mapa</h2>
-            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2523.1304727226498!2d15.0624967!3d50.7731549!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470936a0b62f8e83%3A0x27e91649b311f9a0!2zU3TFmWVkbsOtIHByxa9teXNsb3bDoSDFoWtvbGEgc3Ryb2puw60gYSBlbGVrdHJvdGVjaG5pY2vDoSBhIFZ5xaHFocOtIG9kYm9ybsOhIMWha29sYQ!5e0!3m2!1scs!2scz!4v1681083216794!5m2!1scs!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <img class="icon_lightgrey-text-bubble" src="./icons/icon_lightgrey-text-bubble.svg" alt="Textová bublina">                
-        </section>
-        <section class="section section_individual-page">
-            <h2 class="section__heading heading heading--hidden section_individual-page__subheading">Loga</h2>
+        <section class="section individual-page-section">
+            <h2 class="section__heading heading heading--hidden individual-page-section__subheading">Loga</h2>
             <div class="logo-container">
                 <div class=" logo-box logo-box--up">
                     <a href="#"><img src="./logos/design-set/logo_first-design.svg" alt="První design loga Logoipsum"></a>
@@ -95,8 +100,8 @@
                 </div>
             </div>
         </section>
-        <section class="section section--lightgray section_individual-page">
-            <h2 class="section__heading heading section_individual-page__subheading">Máte na nás <span class="text--orange">nějaký dotaz?</span></h2>            
+        <section class="section section--lightgray individual-page-section">
+            <h2 class="section__heading heading individual-page-section__subheading">Máte na nás <span class="text--orange">nějaký dotaz?</span></h2>            
             <form class="form" method="GET">
                 <label class="form__label form__label--bold" for="name">Celé jméno</label>
                 <input class="form__input form__input--without-border" id="name" type="text" >
