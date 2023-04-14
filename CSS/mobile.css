@@ -25,9 +25,10 @@
     justify-content: space-between;
 }
 
-.navbar__items--lightgrey {
+.navbar__items--top {
     background-color: var(--sec-lightgray);
     padding: 1rem 0;
+    z-index: 2; /*nové menu*/
 }
 
 .navbar__item--top:not(:last-child) {
@@ -50,6 +51,7 @@
     flex-direction: row;
     gap: 1rem;
     align-items: center;
+    z-index: 2; /*nové menu*/
 }
 
 [class*="navbar__item--icon_"]::before {
@@ -148,10 +150,6 @@
     border-bottom: none;
 }
 
-.navbar__menu-item:hover {
-    background-color: rgb(138, 180, 217);
-}
-
 .navbar__menu-link {
     color: var(--prim-white);
     padding: 1rem;
@@ -159,6 +157,7 @@
 
 .navbar__menu-link:hover {
     color: var(--prim-darkblue);
+    background-color: var(--sec-lightblue);
 }
 
 .navbar__logo{
@@ -167,6 +166,7 @@
     background-origin: content-box;
     width: 170px;
     height: 40px;
+    z-index: 2; /*nové menu*/
 }
 
 .navbar__logo:hover {
@@ -273,4 +273,21 @@
 .contact-list-box__link--icon_youtube::before {
     background-image: url(../icons/icon_youtube.svg);
     padding: 0 .5rem .4rem 0;
+}
+
+/*nové menu*/
+
+.navbar__items--bottom {
+    height: 48px;
+}
+
+.navbar__items--bottom::before {
+    content: "";
+    display: block;
+    background-color: var(--prim-white);
+    z-index: 1;
+    margin: 0 -1rem;
+    height: 72px;
+    width: 100%;
+    position: absolute;
 }

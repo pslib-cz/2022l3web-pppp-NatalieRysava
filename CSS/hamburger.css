@@ -59,16 +59,16 @@
     position: absolute;
     background-color: var(--prim-orange);
     left: 0;
-    top: calc(1rem + 5px);
+    top: -2rem; /*nové menu - původně calc(1rem + 5px)*/
     right: 0;
     padding: 0.5rem;
     font-size: 0.8rem;
     margin-top: calc(38.8px + 65px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) { /*767px protože to jinak nešlo*/
     .navbar__menu--hidden {
-        transform: translateY(-110%);
+        transform: translateY(-120%); /*nové menu - původně 110%*/
     }
 
     .hamburger-menu--active .hamburger-menu__line {
@@ -98,5 +98,18 @@
 @media (min-width: 768px) {
     .navbar__hamburger {
         display: none;
+    }
+
+    /*nové menu*/
+
+    .hamburger-menu-list {
+        position: static;
+        background-color: transparent;
+        order: 1;
+        margin-top: 0;
+        display: flex;
+        flex-grow: 1;
+        max-width: 500px;
+        justify-content: space-evenly;
     }
 }
