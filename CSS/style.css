@@ -13,7 +13,7 @@ html {
     --sec-mediumblue: #2D4275;
     --sec-verylightblue: #EFF7FB;
     --sec-lightgray: #F5F5F5;
-    --sec-mediumgray: #E7E7E7;
+    --sec-mediumgray: #F8F8F8;
     --sec-darkgray: #D9D9D9;
     font-size: 16px; /* => 16px = 1rem */
 }
@@ -38,7 +38,7 @@ html {
     color: var(--prim-darkblue);
     margin: 0 auto;
     max-width: 400px;
-    padding: 2rem 2rem 1rem;
+    padding: 3rem 2rem 1rem;
 }
 
 .main-page-section__heading {
@@ -47,6 +47,7 @@ html {
 
 .main-page-section__subheading {
     font-size: 2.25rem;
+    padding-bottom: 2rem;
 }
 
 .individual-page-section__header {
@@ -134,6 +135,7 @@ html {
     height: 1px;
     background-color: var(--sec-mediumgray);
     border: 0;
+    margin-top: 2rem;
 }
 
 .section--line-under::after {
@@ -166,7 +168,7 @@ html {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    margin: 2rem auto;
+    margin: 0 auto;
 }
 
 .logo-container a{
@@ -248,13 +250,14 @@ html {
 }
 
 .picture-box {
-    margin: 2rem
+    margin: 2rem;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
 }
 
 .picture-box--full-width {
-    margin: 0 auto;
-    margin-top: 2rem;
-    padding: 0;
+    margin-inline: 0;
+    padding-bottom: 0;
 }
 
 .picture--rounded {
@@ -277,31 +280,19 @@ body{
 }
 
 .function-container {
-    text-align: center;
     display: flex;
     box-sizing: border-box;
     overflow-x: scroll;
     gap: 2rem;
-    margin-bottom: 2rem;
     padding-top: 2rem;
+}
+
+.main-page-section .function-container {
+    margin-bottom: 2rem;
 }
 
 
 
-@media screen and (pointer: coarse) /* CSS kód, který se má použít pouze pro dotyková zařízení */{    
-    .section--arrow {
-        position: relative;
-    }
-    .section--arrow::after /* dočasná šipka naznačující posun z důvodu, že neumíme ješzě nakódovat karusel*/{
-        content: url(../icons/icon_black-arrow.svg);
-        width: 24px;
-        position: absolute;
-        z-index: 2;
-        bottom: 90px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }   
-  }
 
 .function-container > article {
     flex-shrink: 0;
@@ -315,7 +306,7 @@ body{
     margin-bottom: 2rem;
     position: relative;
     z-index: 1;
-    height: 200px;
+    height: 196px;
 }
 
 .function-box--black-shadow {
@@ -433,7 +424,6 @@ body{
 
 .individual-page-section__subheading {
     font-size: 1.6rem;
-    margin-top: 2rem;
     margin-bottom: 1.5rem;
     color: var(--prim-darkblue);
 }
@@ -448,6 +438,7 @@ body{
     display: flex;
     gap: .5rem;
     align-items: baseline;
+    margin-bottom: 1rem;
 }
 
 .section__path-link {
@@ -493,6 +484,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-inline: 2rem;
 }
 
 .feedback-box__text {
@@ -545,8 +537,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 1rem;
-    margin-bottom: 0;
+    margin: 0;
+    padding-block: 1rem;
 }
 
 .form__input {
@@ -587,7 +579,7 @@ body{
 
 .btn-box:has(.btn--reverse-colors) {
     margin-top: 0;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 [class*="--left"] {
@@ -623,28 +615,13 @@ body{
 
 .footer__main {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
+    grid-template-columns: repeat(1, max-content);
     gap: 2rem;
-    padding: 4em 2rem;
+    padding-block: 4em;
     margin: 0 auto;
+    justify-content: center;
+    justify-items: center;
 }
-
-@media screen and (min-width: 520px) {
-    .footer__main {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 720px;
-    }
-}
-
-@media screen and (min-width: 1160px) {
-    .footer__main {
-        grid-template-columns: repeat(4, 1fr);
-        max-width: none;
-    }
-}
-
-
 
 .footer__footer {
     padding-bottom: 1rem;
@@ -653,7 +630,6 @@ body{
 .footer-box [class*="contact-list-box__"] {
     color: var(--sec-lightblue);
     justify-content: center;
-    text-align: center;
 }
 
 .footer-box .contact-list-container {
@@ -665,8 +641,6 @@ body{
     content: "";
     display: block;
     border: solid var(--sec-lightblue) 1px;
-    width: 80%;
-    margin: 0 auto 1rem;
 }
 
 .footer__footer > .footer-box {
@@ -677,7 +651,8 @@ body{
     align-items: center;
 }
 
-.footer--darkblue {
+.footer {
+    padding-inline: 2rem;
     background-color: var(--prim-darkblue);
 }
 
