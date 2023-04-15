@@ -1,6 +1,6 @@
 @font-face {
     font-family: Hanken Grotesk;
-    src: url(../Fonts/HankenGrotesk-VariableFont_wght.ttf);
+    src: url(../fonts/HankenGrotesk-VariableFont_wght.ttf);
 }
 
 html {
@@ -11,11 +11,11 @@ html {
     --prim-darkblue: #16213C;
     --sec-lightblue: #8ECAE6;
     --sec-mediumblue: #2D4275;
-    --sec-lightblue25: #8ECAE625;
+    --sec-verylightblue: #EFF7FB;
     --sec-lightgray: #F5F5F5;
     --sec-mediumgray: #E7E7E7;
     --sec-darkgray: #D9D9D9;
-    font-size: 16px; /* => 16px == 1 em = 1rem */
+    font-size: 16px; /* => 16px = 1rem */
 }
 
 .text {
@@ -27,6 +27,7 @@ html {
 .heading {
     font-weight: 800;
     text-align: center;
+    margin-block: 1rem;
 }
 
 [class*="--orange"] {
@@ -87,7 +88,7 @@ html {
     color: var(--sec-mediumblue);
 }
 
-.actuality-box--icon_lightblue-text-bubble {
+.actuality-box--icon-lightblue-text-bubble {
     background-image: url(../icons/icon_lightblue-text-bubble.svg);
     box-sizing: border-box;
     color: var(--sec-lightblue);
@@ -216,7 +217,7 @@ html {
 }
 
 .rating-box:hover {
-    background-color: var(--sec-lightblue25);
+    background-color: var(--sec-verylightblue);
 }
 
 .rating-box img {
@@ -271,8 +272,8 @@ body{
     margin: 0 auto;
 }
 
-.section--lightblue {
-    background-color: var(--sec-lightblue25);
+.section--verylightblue {
+    background-color: var(--sec-verylightblue);
 }
 
 .function-container {
@@ -287,7 +288,7 @@ body{
 
 
 
-@media (pointer: coarse) /* CSS kód, který se má použít pouze pro dotyková zařízení */{    
+@media screen and (pointer: coarse) /* CSS kód, který se má použít pouze pro dotyková zařízení */{    
     .section--arrow {
         position: relative;
     }
@@ -357,11 +358,11 @@ body{
 }
 
 .function-container > article:first-child {
-    margin-left: 2rem;
+    margin-left: 4rem;
 }
 
 .function-container > article:last-child {
-    margin-right: 2rem;
+    margin-right: 4rem;
 }
 
 .function-box > *:not(div) {
@@ -378,7 +379,7 @@ body{
     padding-bottom: 2rem;
 }
 
-.icon_lightgrey-text-bubble {
+.icon-lightgrey-text-bubble {
     position: absolute;
     bottom: 14px;
     width: calc(92px * 0.75);
@@ -390,7 +391,7 @@ body{
 
 /* funkce */
 
-.section--margin {
+.individual-page-section--margin {
     margin: 0 2rem 2rem;
 }
 
@@ -398,6 +399,7 @@ body{
     display: flex;
     gap: 2rem;
     align-items: center;
+    justify-content: space-between;
 }
 
 .function-list-box {
@@ -426,6 +428,7 @@ body{
     font-size: 1.15rem;
     margin: 1rem 0;
     text-align: left;
+    max-width: 724px;
 }
 
 .individual-page-section__subheading {
@@ -456,7 +459,7 @@ body{
     color: var(--prim-orange);
 }
 
-.section__path-link--icon_home::before {
+.section__path-link--icon-home::before {
     content: url(../icons/icon_home.svg);
     padding-bottom: .4rem;
 }
@@ -511,17 +514,6 @@ body{
 }
 
 /* kontakt */
-
-.map {
-    height: 360px;
-    width: 100%;
-    display: block;
-    margin: 2rem auto;
-}
-
-.map-box {
-    margin: 0;
-}
 
 .contact-list-container {
     display: flex;
@@ -595,12 +587,17 @@ body{
 
 .btn-box:has(.btn--reverse-colors) {
     margin-top: 0;
+    margin-bottom: 2rem;
 }
 
 [class*="--left"] {
     text-align: left;
     padding-left: 0;
     margin-left: 0;
+}
+
+.btn-box--left {
+    margin-top: 1rem;
 }
 
 @media screen and (max-width: 480px) {
