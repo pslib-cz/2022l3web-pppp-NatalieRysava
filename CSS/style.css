@@ -147,7 +147,6 @@ html {
 
 .actuality-box--icon-lightblue-text-bubble {
     background-image: url(../icons/icon_lightblue-text-bubble.svg);
-    box-sizing: border-box;
     color: var(--color-sec-light-blue);
     background-repeat: no-repeat;
     width: 52px;
@@ -335,15 +334,11 @@ body{
 
 .function-container {
     display: flex;
-    box-sizing: border-box;
     overflow-x: scroll;
     gap: 2rem;
     padding-top: 2rem;
 }
 
-.main-page-section .function-container {
-    margin-bottom: 2rem;
-}
 
 
 

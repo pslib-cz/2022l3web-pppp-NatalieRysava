@@ -626,6 +626,7 @@
 
     .function-container {
         margin-inline: 2rem;
+        padding-inline: 2rem;
     }      
 
     .actuality-container {
@@ -691,12 +692,20 @@
 }
 
 @media screen and (min-width: 961px) {
-    .navbar__items, .footer, .actuality-container {
+    .navbar__items, .footer {
         padding-inline: 4rem;
     }
 
-    .individual-page-box, .individual-page-section__header, .individual-page-section--margin, .story-container {
-        padding-inline: 4rem;
+    .actuality-container {
+        padding-inline: 3rem;
+    }
+
+    .individual-page-box, .individual-page-section__header, .story-container {
+        padding-inline: 2rem;
+    }
+
+    .individual-page-section--margin {
+        padding-inline: 2rem;
     }
 
     .icon-box {
@@ -770,11 +779,6 @@
         width: max-content;
     }
 
-    .individual-page-section__header {
-        margin: 0;
-
-    }
-
     .map-box {
         padding: 0;
         margin: 0;
@@ -819,6 +823,10 @@
         text-align: left;
         padding: 1rem 0 1rem 0;
         align-self: end;
+    }
+
+    .actuality-container {
+        padding-inline: 7rem;
     }
 
     .main-page-box {
@@ -873,7 +881,7 @@
     }
 
     .individual-page-section__header {
-        margin-inline: 4rem;
+        margin-inline: 6rem;
     }
 
     .individual-page-container {
@@ -882,14 +890,21 @@
 
     /* kontakt, funkce */
 
-    .individual-page-section--margin {
-        margin-inline: 4rem;
+
+    .individual-page-section--margin  {
+        margin-inline: 6rem;
     }
+    
     .individual-page-section .function-container-wrapper {
         margin-inline: 6rem;
         container-type: inline-size;
         container-name: function-container-wrapper;
     }
+
+    .main-page-section .function-container-wrapper {
+        margin-inline: 6rem;
+    }
+
 
     .section--mediumgray {
         background-color: var(--color-prim-white);
@@ -923,8 +938,7 @@
 @media screen and (min-width: 1340px) {
     .rating-container {
         flex-direction: row;
-        padding-inline: 2rem;
-        justify-content: center;
+        justify-content: space-between;
     }
 }
 
@@ -941,13 +955,25 @@
         height: 520px;
     }
 
+    .rating-container {
+        padding-inline: 15.5rem;
+    }
+
+    .actuality-container {
+        padding-inline: 17rem;
+    }
+
+    .main-page-section .function-container-wrapper {
+        margin-inline: 16rem;
+    }
+
     .individual-page-section .function-container {
         display: grid;
         justify-content: center;
         overflow: visible;
         gap: 2rem;
         grid-template-columns: repeat(4, 304px);
-        max-width: calc(4 * (304px + 2rem) - 2rem + 2 * 6rem);
+        max-width: calc(4 * (304px + 2rem) - 2rem);
         background-color: var(--color-sec-very-light-gray);
         padding: 6rem;
         border-radius: 2rem;
@@ -976,7 +1002,7 @@
     }
 
     .individual-page-section__header, .individual-page-section--margin {
-        margin-inline: 14rem;
+        margin-inline: 16rem;
     }
 
     .individual-page-section .function-container-wrapper {
