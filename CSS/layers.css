@@ -1050,11 +1050,11 @@
     }
 
     .main-page-section--arrow::after {
-        bottom: 5.5rem;
+        bottom: 84px;
     }
 
     .individual-page-section--arrow::after {
-        bottom: 1rem;
+        bottom: 6px;
     }
 }
 
