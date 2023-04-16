@@ -1001,6 +1001,10 @@
         padding-inline: 18rem;
     }
 
+    .icon-box {
+        padding-inline: 17rem;
+    }
+
     .individual-page-section__header, .individual-page-section--margin {
         margin-inline: 16rem;
     }
