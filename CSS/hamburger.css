@@ -20,9 +20,8 @@
     align-items: center;
     color: inherit;
     text-transform: uppercase;
-    font-size: 0.75rem;
     text-decoration: none;
-    font-size: 0px;
+    font-size: 0;
     width: 30px;
     height: 25px;
     position: relative;
@@ -55,8 +54,7 @@
     left: 0; 
     top: 100%; 
     right: 0; 
-    padding: 0.5rem; 
-    font-size: 0.8rem; 
+    padding: 0.5rem;
     margin-top: 0;
 }
 
