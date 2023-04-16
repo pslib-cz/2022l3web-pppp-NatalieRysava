@@ -152,6 +152,7 @@ html {
     width: 52px;
     padding-top: .5rem;
     text-align: center;
+    font-weight: var(--font-weight-extrabold);
 }
 
 .actuality-box__heading {
