@@ -929,7 +929,7 @@
         bottom: 7.5rem;
     }
 
-    .logo-container, .logo-box, .individual-page-container {
+    .logo-container, .logo-box, .individual-page-container, .logo-container > div {
         gap: 4rem;
     }
 
